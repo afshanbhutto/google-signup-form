@@ -1,64 +1,51 @@
-<<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Google SignUp Form</title>
+    <title>SignUp Page</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <div class="wrapper">
-    <form action="action_page.php" class="form">
-      <div class="main">
-       <div class="logo">
-           <img src="google logo.png" alt="Google">
-       </div>
-       <div class="create">
-           <h1>Create your Google Account</h1>
-       </div>
-       <div class="body">
-           <input type="text" name="name"  placeholder="First name" maxlength="15" required style="">
-           
-           <input type="text" name="name"  placeholder="Last name" maxlength="15" required >
-           
-           <input type="email" name="email" placeholder="username@gamil.com"  required>
-           <p>you can use numbers,letters and periods</p>
-           <p><a href="#">Use my current email address instead</a></p>
-           
-           <input type="password" name="name" placeholder="password" minlength="8" required>
-           
-           <input type="password" name="name" placeholder="confirm"required>
-           <p>Use 8 or more characters with a mix of letters, numbers & </p>
-           <p>symbols</p>
-           <div class="sign"> 
-                <span class="in"> <a href="#">Sign in instead</a> </span>
-            <button type="submit" class="btn">Next </button>
-        </div>
-    </div>
-   </div> 
-   <div class="img">
-   <figure>
-       <img src="account.svg" alt="" width="200" height="300">
-       <figcaption style="margin: 2px;  padding: 0px;">
-        account. All of Google working for you.
-        </figcaption>
-    </figure>
-    </div>  
-</form>
-<div class="foot">
-    <span style="margin: 20px 20px 10px 20px;"> 
-        <select id="language">
-        <option value="englis(US)">Englis(US)</option>
-        <option value="french">French</option>
-        <option value="chinese">Chinese</option>
-        <option value="spanish">Spanish</option>
-      </select></span> 
-<span class="foot1">   <a href="#" style="color: rgb(95, 90, 90);">Help</a> </span> 
-<span class="foot1" > <a href="#" style="color: rgb(95, 90, 90);">privacy</a> </span>
-<span class="foot1">  <a href="#" style="color: rgb(95, 90, 90);">terms</a> </span> 
-</div>
-</div>
+        <main>
+             <div class="container">
+                    <form action="">
+                        <img src="images/logo.png" alt="logo">
+                        <h1>Sign in</h1>
+                        <p>Use your Google Account</p>
+                        <input id="email" type="text" placeholder="Enter your Email">
+                        <span class="error"></span>
+                        <a href="#" class="learn">Forgot email?</a>
+                        <div>
+                            <p>Not your computer? Use Guest mode to sign in privately.</p>
+                            <a href="#" class="learn">Learn More</a>
+                        </div>
+                        <div id="create">
+                            <a href="#" class="learn">Create Account</a>
+                            <a href="#" class="learn2" onClick="checkEmail()"> Next</a>
+                        </div>
+                    </form>
+                </div>
+            </main>
+       <footer>
+            <select name="language" id="lang">
+                <option value="us" selected disabled>English(united states)</option>
+                <option value="urdu">(urdu)</option>
+                <option value="arabic">(arabic)</option>
+                <option value="sindhi">(sindhi)</option>
+            </select>
+        
+            <ul>
+                <li><a href="">Help</a> </li>
+                <li><a href="">Privacy</a> </li>
+                <li><a href="">Terms</a> </li>
+            </ul>
+        
+        </footer>
+    </form>
+    <script src="script.js"></script>
+
 </body>
 </html>

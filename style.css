@@ -1,117 +1,97 @@
-*{
-    margin: 0 auto;
-}
-*{
-    box-sizing: border-box;
-}
-body{
-    background-size: cover;
-    background-position: center center;
-}
-.wrapper{
-    width:800px;
-    margin: 5% auto;
-}
-.form{
-    display: flex;
-    background: white;
-    border-radius: 5px;
-    padding: 1.8em;
-    border:1px solid black;
-}
-.main{
-    display:flex;
-    width: 100%;
-    flex-direction: column;
-    order: 1;
-}
-.create{
-    margin: 10px 10px;
-    font-size: 13px;
-    flex-direction: column;
-    font-display: none;
-    font-style:inherit
+body {
+  font-family: cursive;
 }
 
-input[type=text], input[type=password] {
-    padding: 8px;
-    margin: 10px 10px;
-    border: 1px solid black;
-    background: white;
-    border-radius: 5px
-  }
-  input[type=text]:focus, input[type=password]:focus ,input[type=email]:focus {
-    outline: none;
-    border: 2px solid rgb(51, 51, 253);
-  }
-  input[type=email]{
-    padding: 8px;
-    margin: 10px 10px;
-    width: 86%;
-    border: 1px solid black;
-    background: white;
-    border-radius: 5px
-  }
-  p{
-    margin:1px 10px;    
-  }
-  .img{
-      margin: 10px 10px;
-      flex-direction: column;
-      order:2;
-  }
-  required{
-    border: 1px solid red;
-  }
-  .logo{
-      width: 50px;
-      height: 50px;
-      float: left;
-      margin: 20px;
-  }
-  figure{
-      padding: 20px;
-      margin: 20px 10px;
-  }
-.btn{
-    background-color: rgb(51, 51, 253);
-    color:white;
-    border-radius: 5px;
-    padding: 10px 30px;
-    margin: 50px 100px;
-    border: none
-}
-a{
-    color:rgb(51, 51, 253);
-    font-display: none;
-}
-.sign{
-    display: inline-block;
-}
-input:focus{
-    border:1px solid rgb(51, 51, 253);
+main,footer {
+  display: flex;
+  border-radius: 10px;
 }
 
-.body label{
-      position: absolute;
-      top: 0;
-      margin: 10px;
-      padding: 0 10px;
-      transition: top .2s ease-in-out, font-size .2s ease-in-out;
-  }
-  .in:hover{
-      cursor: pointer;
-      background-color: rgb(217, 230, 243);
-  }
-  .btn:hover{
-      cursor: pointer;
-  }
-  .foot1{
-      color: black;
-      margin: 10px;
-      padding: 50px;
-  }
-  figcaption{
-    padding: 2px;
-    text-align: center;
-  }
+.container {
+  margin: auto;
+  flex-direction: column;
+  border: 1px solid #cccccc;
+  padding: 1em 2em;
+  text-align: center;
+  min-width: 320px;
+  border-radius: 5px;
+}
+
+.container input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.container .learn {
+  color: #1a73e8;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+#create {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#create .learn2 {
+  text-decoration: none;
+  color: white;
+  background-color: #1a73e8;
+  border: none;
+  padding: 0 30px;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.error {
+  color: red;
+  text-align: left;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 8px;
+}
+
+.welcome {
+  text-align: center;
+}
+.welcome h1{
+  color: blue;
+  /*background-image: url(images/060ea8_3b70948af2d747d7b880f387d06640df_mv2.webp);
+  background-repeat: no-repeat;
+  background-size: auto;*/
+}
+
+footer{
+  /* margin:0em 2em 2em em; */
+  display: flex;
+  justify-content: center;
+
+}
+ul a{
+  color:#757575;
+  text-decoration: none;
+}
+ul li
+{
+  display: inline;
+  margin-right:1em;
+ 
+}
+#lang
+{
+    border: none;
+    margin-right: 5em;
+}
+#login_email
+{
+    border:1px solid black; 
+    padding:0 5px;
+     border-radius: 5px;
+}
